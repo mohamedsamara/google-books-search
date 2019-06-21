@@ -1,3 +1,18 @@
 .search {
   margin: 25px 0px;
 }
+
+.input-search {
+  position: relative;
+}
+
+.input-search .theme-input {
+  width: 100%;
+}
+
+.input-search .theme-btn {
+  position: absolute;
+  right: 0px;
+  height: 100%;
+  text-align: center;
+}

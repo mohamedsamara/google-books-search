@@ -10,9 +10,13 @@ const BookItem = props => {
       <div className='book-box'>
         <h4>{book.title}</h4>
         {book.description && <p>{book.description}</p>}
-        <p>
-          By: <strong>{book.authors ? book.authors.join(', ') : 'N/A'} </strong>
-        </p>
+
+        {book.authors && (
+          <p>
+            By: <strong>{book.authors.join(', ')} </strong>
+          </p>
+        )}
+
         <div className='img-container'>
           {saved && book.img && <img src={book.img} alt={''} />}
           {!saved && book.imageLinks && (

@@ -13,7 +13,7 @@ const SavedBookList = props => {
         <BookItem
           key={index}
           book={book}
-          deleteBook={deleteBook}
+          deleteBook={id => deleteBook(id, index)}
           saved={true}
         />
       ))}

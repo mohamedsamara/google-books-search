@@ -6,8 +6,6 @@ const Book = require('../../models/book');
 router.get('/', (req, res) => {
   Book.find()
     .then(booksData => {
-      console.log('booksData', booksData);
-
       res.json(booksData);
     })
     .catch(err => {

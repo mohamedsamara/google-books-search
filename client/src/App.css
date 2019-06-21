@@ -76,6 +76,10 @@ a:hover {
   color: #e64514;
 }
 
+.theme-btn:focus {
+  outline: none;
+}
+
 .theme-input {
   padding: 10px;
   border: 1px solid #cccc;
@@ -83,8 +87,6 @@ a:hover {
 
 .theme-input:focus {
   outline: none;
-  border-width: 2px;
-  border-right: none;
 }
 
 .no-data {
