@@ -2,23 +2,51 @@ import React, { Component } from 'react';
 
 import API from '../utils/API';
 
-class Saved extends Component {
-  state = {
-    books: []
-  };
+import SavedBookList from '../components/SavedBookList';
 
-  componentDidMount() {
-    // this.loadBooks();
+class Saved extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      savedBooks: []
+    };
   }
 
-  //   loadBooks = () => {
-  //     API.getBooks()
-  //       .then(res => this.setState({ books: res.data }))
-  //       .catch(err => console.log(err));
-  //   };
+  componentDidMount() {
+    API.getBooks()
+      .then(response => {
+        this.setState({ savedBooks: response.data });
+      })
+      .catch(err => {
+        console.log(err);
+      });
+  }
+
+  deleteBook(Id) {
+    API.deleteBook(Id)
+      .then(response => {
+        console.log(response);
+      })
+      .catch(err => {
+        console.log(err);
+      });
+  }
 
   render() {
-    return <div>saved</div>;
+    const { savedBooks } = this.state;
+
+    return (
+      <div className='saved'>
+        {savedBooks.length > 0 ? (
+          <SavedBookList
+            books={savedBooks}
+            deleteBook={Id => this.deleteBook(Id)}
+          />
+        ) : (
+          'No Saved Books Yet!'
+        )}
+      </div>
+    );
   }
 }
 

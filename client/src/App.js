@@ -3,21 +3,21 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import Books from './pages/Books';
 import Saved from './pages/Saved';
-import Nav from './components/Nav';
+import NavMenu from './components/NavMenu';
 
 const App = () => {
   return (
-    <div className='application'>
-      <div className='wrapper'>
-        <Nav />
-        <Router>
+    <Router>
+      <div className='application'>
+        <div className='wrapper'>
+          <NavMenu />
           <Switch>
             <Route exact path='/' component={Books} />
             <Route path='/saved' component={Saved} />
           </Switch>
-        </Router>
+        </div>
       </div>
-    </div>
+    </Router>
   );
 };
 
