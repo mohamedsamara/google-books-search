@@ -3,6 +3,8 @@ import { Collapse, Navbar, NavbarToggler, Nav, NavItem } from 'reactstrap';
 
 import { Link } from 'react-router-dom';
 
+import './style.css';
+
 class NavMenu extends Component {
   constructor(props) {
     super(props);
@@ -21,8 +23,8 @@ class NavMenu extends Component {
 
   render() {
     return (
-      <div>
-        <Navbar color='light' light expand='md'>
+      <header className='header'>
+        <Navbar light expand='md'>
           <Link to={'/'}>Google Books Search</Link>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
@@ -36,7 +38,7 @@ class NavMenu extends Component {
             </Nav>
           </Collapse>
         </Navbar>
-      </div>
+      </header>
     );
   }
 }

@@ -43,7 +43,7 @@ class Saved extends Component {
             deleteBook={Id => this.deleteBook(Id)}
           />
         ) : (
-          'No Saved Books Yet!'
+          <p className='no-data'>No Saved Books Yet!</p>
         )}
       </div>
     );

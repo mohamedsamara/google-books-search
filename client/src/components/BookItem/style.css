@@ -1,0 +1,21 @@
+.actions {
+  border-top: 1px solid #cccc;
+  padding: 25px 0px;
+  margin: 25px 0px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.actions a {
+  margin: 0px 10px;
+}
+
+@media (max-width: 700px) {
+  .actions {
+    justify-content: flex-start;
+  }
+}

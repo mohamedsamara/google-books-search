@@ -8,6 +8,7 @@ const SavedBookList = props => {
   return (
     <div className='books'>
       <h3>Books</h3>
+      <hr />
       {books.map((book, index) => (
         <BookItem
           key={index}

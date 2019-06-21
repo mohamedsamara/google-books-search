@@ -1,0 +1,11 @@
+.header {
+  background-color: #e64514;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.nav-item {
+  margin: 0px 5px;
+}

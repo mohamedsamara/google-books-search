@@ -1,0 +1,93 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.application {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.wrapper {
+  padding: 60px 0px;
+}
+
+span,
+label,
+a,
+p {
+  font-size: 16px;
+}
+
+label {
+  cursor: default;
+  margin: 0;
+}
+
+a {
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: #ffffff94 !important;
+  -moz-transition: color 0.2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+.theme-link {
+  display: block;
+  text-align: center;
+  width: 150px;
+  padding: 10px;
+  border: 1px solid #cccc !important;
+  color: #e64514 !important;
+}
+
+.theme-link:hover {
+  color: #e64514 !important;
+  background-color: #cccccc52;
+}
+
+.theme-btn {
+  border: 1px solid #cccc !important;
+  background-color: #e64514;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  width: 150px;
+  transition: 0.3s;
+}
+
+.theme-btn:hover {
+  background-color: #fff;
+  color: #e64514;
+}
+
+.theme-input {
+  padding: 10px;
+  border: 1px solid #cccc;
+}
+
+.theme-input:focus {
+  outline: none;
+  border-width: 2px;
+  border-right: none;
+}
+
+.no-data {
+  margin: 25px 0px;
+  color: #e64514;
+}
