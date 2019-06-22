@@ -53,7 +53,7 @@ class Books extends Component {
     const bookData = {
       title: book.title,
       authors: book.authors,
-      link: book.infoLink,
+      infoLink: book.infoLink,
       img: book.imageLinks.smallThumbnail,
       description: book.description
     };

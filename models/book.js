@@ -8,7 +8,7 @@ const bookSchema = new Schema({
   img: {
     type: { String }
   },
-  link: {
+  infoLink: {
     type: String
   }
 });
