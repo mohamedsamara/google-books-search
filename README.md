@@ -32,7 +32,7 @@ $ npm install
 
 ### Run the application for development
 
-npm start:dev
+npm run start:dev
 
 ### Run the application for production
 
