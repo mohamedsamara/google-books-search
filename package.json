@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mohamedsamara/Google-Books-Search.git"
+    "url": "git+https://github.com/mohamedsamara/google-books-search.git"
   },
   "keywords": [
     "node",
@@ -25,9 +25,9 @@
   "author": "Mohamed Samara (https://github.com/mohamedsamara)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mohamedsamara/Google-Books-Search/issues"
+    "url": "https://github.com/mohamedsamara/google-books-search/issues"
   },
-  "homepage": "https://github.com/mohamedsamara/Google-Books-Search#readme",
+  "homepage": "https://github.com/mohamedsamara/google-books-search#readme",
   "devDependencies": {
     "concurrently": "^4.1.0",
     "nodemon": "^1.18.7"
