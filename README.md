@@ -26,7 +26,6 @@ Some basic Git commands are:
 $ git clone https://github.com/mohamedsamara/google-books-search.git
 $ cd project
 $ npm install
-
 ```
 
 
@@ -34,21 +33,18 @@ $ npm install
 
 ```
 $ npm run build
-
 ```
 
 ### Run the application for development
 
 ```
 $ npm run start:dev
-
 ```
 
 ### Run the application for production
 
 ```
 $ npm run start:prod
-
 ```
 
 
