@@ -30,7 +30,7 @@ $ npm install
 ```
 
 
-## Simple build for production
+### Simple build for production
 
 ```
 $ npm run build
