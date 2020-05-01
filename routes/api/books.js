@@ -42,7 +42,7 @@ router.delete('/:id', (req, res) => {
       res.json({ successful: response });
     })
     .catch(err => {
-      rres.json({ error: err });
+      res.json({ error: err });
     });
 });
 
